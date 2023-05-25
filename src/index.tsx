@@ -8,6 +8,14 @@ import Welcome from './screens/Welcome';
 
 const Stack = createNativeStackNavigator();
 
+// const Tab = useTab();
+
+// const TabScreen = () => (
+//   <Tab.Navigator>
+//     <Tab.Screen name component />
+//   </Tab.Navigator>
+// );
+
 function App() {
   return (
     <NavigationContainer>
@@ -16,6 +24,7 @@ function App() {
         screenOptions={{headerShown: false}}
       >
         <Stack.Screen name="Welcome" component={Welcome} />
+        {/* <Stack.Screen name='Tab' component={TabScreen} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
