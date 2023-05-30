@@ -6,30 +6,30 @@ const {width} = Dimensions.get('window');
 export const Container = styled.View`
   flex: 1;
   background-color: #E5E5E5;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const TitleInitial = styled.Text`
   color: #111111;
   font-size: 28px;
   font-weight: bold;
-  margin-left: 10px;
+  align-self: flex-start;
+  margin-left: 20px;
 `;
 
-export const Separator15 = styled.View`
-  margin-top: 15px;
+export const Separator10 = styled.View`
+  margin-top: 10px;
 `;
 
 export const Separator20 = styled.View`
   margin-top: 20px;
 `;
 
-export const AlingImage = styled.View`
-  align-items: center;
-`;
-
 export const Buttons = styled.View`
-  width: ${width - 20}px;
   flex-direction: row;
+  width: ${width - 20}px;
+  justify-content: space-evenly;
 `;
 
 export const BackgroundGrey = styled.TouchableOpacity`
