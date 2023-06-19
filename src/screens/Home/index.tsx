@@ -10,7 +10,14 @@ import {
   TitleCard,
   NumberCard,
   Separator5,
+  Separator10,
   Separator40,
+  Separator20,
+  ContainerWhite,
+  TitleMenu,
+  ContainerAbsolute,
+  Description,
+  TitleDescription,
 } from "./styles";
 import WalletIcon from "../../assets/Wallet";
 import Transfer from "../../assets/Transfer";
@@ -19,6 +26,7 @@ import Withdraw from "../../assets/Withdraw";
 import Reward from "../../assets/Reward";
 import Nearby from "../../assets/Nearby";
 import Notification from "../../assets/Notification";
+import Vector from "../../assets/Vector";
 
 export default function Home() {
   const DATA = [
@@ -66,17 +74,61 @@ export default function Home() {
         <Separator40 />
       </View>
       <View style={{flex: 1}}>
+        <>
+        <TitleMenu>Main Menus</TitleMenu>
+        </>
+        <Separator20 />
         <RowView>
+          <Description>
+          <ContainerWhite>
           <WalletIcon />
+          </ContainerWhite>
+          <Separator10 />
+          <TitleDescription>Top Up</TitleDescription>
+          </Description>
+          <Description>
+          <ContainerWhite>
           <Transfer />
+          </ContainerWhite>
+          <Separator10 />
+          <TitleDescription>Transfer</TitleDescription>
+          </Description>
+          <Description>
+          <ContainerWhite>
           <Bills />
+          </ContainerWhite>
+          <Separator10 />
+          <TitleDescription>Bills</TitleDescription>
+          </Description>
         </RowView>
+        <Separator40 />
         <RowView>
+          <Description>
+          <ContainerWhite>
           <Withdraw />
+          </ContainerWhite>
+          <Separator10 />
+          <TitleDescription>Withdraw</TitleDescription>
+          </Description>
+          <Description>
+          <ContainerWhite>
           <Reward />
+          </ContainerWhite>
+          <Separator10 />
+          <TitleDescription>Reward</TitleDescription>
+          </Description>
+          <Description>
+          <ContainerWhite>
           <Nearby />
+          </ContainerWhite>
+          <Separator10 />
+          <TitleDescription>Nearby</TitleDescription>
+          </Description>
         </RowView>
       </View>
+      <ContainerAbsolute>
+        <Vector />
+      </ContainerAbsolute>
     </Container>
   );
 }
