@@ -19,11 +19,11 @@ export const TitleInitial = styled.Text`
 `;
 
 export const Separator10 = styled.View`
-  margin-top: 10px;
+  height: 10px;
 `;
 
 export const Separator20 = styled.View`
-  margin-top: 20px;
+  height: 20px;
 `;
 
 export const Buttons = styled.View`

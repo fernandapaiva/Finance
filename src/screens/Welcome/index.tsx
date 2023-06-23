@@ -18,7 +18,7 @@ export default function Welcome () {
         <BackgroundGrey>
           <TextButton>Sign In</TextButton>
         </BackgroundGrey>
-        <BackgroundPurple onPress={() => navigation.navigate('Home')}>
+        <BackgroundPurple onPress={() => navigation.navigate('BottomTab')}>
           <TextPurple>Get Started</TextPurple>
         </BackgroundPurple>
       </Buttons>

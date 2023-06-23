@@ -110,5 +110,5 @@ export const ContainerAbsolute = styled.View`
   justify-content: center;
   align-items: center;
   align-self: center;
-  bottom: 70px;
+  top: 500px;
 `;
