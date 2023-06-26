@@ -10,10 +10,14 @@ import {
   ColumText,
   ColumValue,
   Separator10,
+  Separator20,
+  Separator30,
   SubContainer,
   RowView,
   Button,
   TextButton,
+  TitleTime,
+  NumberText,
 } from './styles';
 import Google from '../../assets/Google';
 import Checked from '../../assets/Checked';
@@ -25,13 +29,21 @@ export default function AlertCustom() {
       transparent>
       <Container>
         <ContainerInside>
+          <Separator30 />
           <SubContainer>
           <Google />
+          <Separator20 />
           <RowView>       
             <Information>Google Drive</Information>   
             <Checked />
-          </RowView>
+          </RowView> 
+          <TitleTime>12:30</TitleTime>
+          <Separator30 />
+          <>
+          <NumberText>-$20,500</NumberText>
+          </>
           </SubContainer>
+          <Separator20 />
           <ContainerInformation>
             <ColumText>
             <TextInformation>CloudOne 10GB</TextInformation>
@@ -48,6 +60,7 @@ export default function AlertCustom() {
             <ValueInformation>$5,000</ValueInformation>
             </ColumValue>
             </ContainerInformation>
+            <Separator20 />
             <Button>
               <TextButton>Ok, Close</TextButton>
             </Button>
