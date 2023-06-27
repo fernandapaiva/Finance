@@ -15,7 +15,6 @@ import {
   Separator20,
   ContainerWhite,
   TitleMenu,
-  ContainerAbsolute,
   Description,
   TitleDescription,
 } from "./styles";
@@ -26,7 +25,6 @@ import Withdraw from "../../assets/Withdraw";
 import Reward from "../../assets/Reward";
 import Nearby from "../../assets/Nearby";
 import Notification from "../../assets/Notification";
-import Vector from "../../assets/Vector";
 
 export default function Home() {
   const DATA = [
@@ -126,9 +124,6 @@ export default function Home() {
           </Description>
         </RowView>
       </View>
-      <ContainerAbsolute>
-        <Vector />
-      </ContainerAbsolute>
     </Container>
   );
 }

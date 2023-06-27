@@ -7,7 +7,6 @@ export const Container = styled.View`
   flex: 1;
   background-color: black;
   justify-content: flex-end;
-  opacity: 0.68;
 `;
 
 export const ContainerInside = styled.View`
