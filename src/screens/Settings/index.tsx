@@ -1,6 +1,10 @@
 import React from 'react';
-import {Container} from './styles';
+import {Container, Title} from './styles';
 
 export default function Settings () {
-  return <Container />
+  return (
+    <Container>
+      <Title>Settings</Title>
+    </Container>
+  )
 }
