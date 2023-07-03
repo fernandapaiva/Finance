@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { FlatList, View } from "react-native";
 import {
   Container,
@@ -26,24 +26,40 @@ import Reward from "../../assets/Reward";
 import Nearby from "../../assets/Nearby";
 import Notification from "../../assets/Notification";
 
+import Modal from '../../components/Modal';
+
+const DATA = [
+  {
+    conta: "Current Balance",
+    saldo: "$12,490,209",
+    numero: "°°°° °°°° °°°° 3901",
+    colorCard: "green",
+  },
+  {
+    conta: "Current Balance",
+    saldo: "$12,490,209",
+    numero: "°°°° °°°° °°°° 3901",
+    colorCard: "purple",
+  },
+];
+
 export default function Home() {
-  const DATA = [
-    {
-      conta: "Current Balance",
-      saldo: "$12,490,209",
-      numero: "°°°° °°°° °°°° 3901",
-      colorCard: "green",
-    },
-    {
-      conta: "Current Balance",
-      saldo: "$12,490,209",
-      numero: "°°°° °°°° °°°° 3901",
-      colorCard: "purple",
-    },
-  ];
+  
+  const [visible, setVisible] = useState(false);
+  
+  const onPressModal = () => {
+    setVisible(false); 
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setVisible(true)
+    }, 2000)
+  }, []) 
 
   return (
     <Container>
+      <Modal visible={visible} setVisible={setVisible} onPress={onPressModal}/>
       <FirstRow>
         <TitleBlack>Dashboard</TitleBlack>
         <Notification />

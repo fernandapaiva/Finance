@@ -1,10 +1,6 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Container } from './styles';
 
-// import { Container } from './styles';
-
-const Finance = () => {
-  return <View />;
+export default function Scan () {
+  return <Container />
 }
-
-export default Finance;

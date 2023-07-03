@@ -44,6 +44,7 @@ export const BackgroundGrey = styled.TouchableOpacity`
 export const TextButton = styled.Text`
   font-size: 16px;
   color: #6f6f94;
+  font-weight: 500;
 `;
 
 export const BackgroundPurple = styled.TouchableOpacity`

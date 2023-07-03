@@ -7,6 +7,7 @@ export const Container = styled.View`
   flex: 1;
   background-color: black;
   justify-content: flex-end;
+  opacity: 0.93;
 `;
 
 export const ContainerInside = styled.View`
@@ -39,6 +40,10 @@ export const Separator10 = styled.View`
   height: 10px;
 `;
 
+export const SeparatorItem = styled.View`
+  width: 6px;
+`;
+
 export const Information = styled.Text`
   font-size: 16px;
   color: #111111;
@@ -48,11 +53,13 @@ export const Information = styled.Text`
 export const TextInformation = styled.Text`
   font-size: 16px;
   color: #111111;
+  font-weight: 400;
 `;
 
 export const ValueInformation = styled.Text`
   font-size: 16px;
   color: #111111;
+  font-weight: 700;
 `;
 
 export const ContainerInformation = styled.View`

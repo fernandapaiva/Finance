@@ -18,13 +18,19 @@ import {
   TextButton,
   TitleTime,
   NumberText,
+  SeparatorItem,
 } from "./styles";
 import Google from "../../assets/Google";
 import Checked from "../../assets/Checked";
 
-export default function AlertCustom() {
+export default function AlertCustom({ visible, setVisible, onPress }) {
   return (
-    <Modal animationType="fade" transparent>
+    <Modal
+      animationType="fade"
+      transparent
+      visible={visible}
+      onRequestClose={() => setVisible(false)}
+    >
       <Container>
         <ContainerInside>
           <Separator30 />
@@ -33,9 +39,10 @@ export default function AlertCustom() {
             <Separator20 />
             <RowView>
               <Information>Google Drive</Information>
+              <SeparatorItem />
               <Checked />
             </RowView>
-            <TitleTime>12:30</TitleTime>
+            <TitleTime>12:30 PM</TitleTime>
             <Separator30 />
             <>
               <NumberText>-$20,500</NumberText>
@@ -59,7 +66,7 @@ export default function AlertCustom() {
             </ColumValue>
           </ContainerInformation>
           <Separator20 />
-          <Button>
+          <Button onPress={() => onPress()}>
             <TextButton>Ok, Close</TextButton>
           </Button>
         </ContainerInside>
