@@ -23,7 +23,13 @@ import {
 import Google from "../../assets/Google";
 import Checked from "../../assets/Checked";
 
-export default function AlertCustom({ visible, setVisible, onPress }) {
+interface ModalProps {
+  visible: boolean,
+  setVisible: (value: boolean) => void,
+  onPress: () => void,
+}
+
+export default function AlertCustom({visible, setVisible, onPress}: ModalProps) {
   return (
     <Modal
       animationType="fade"
